@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- using for loop -->
+    <h3>1.Multiplication table of 5 using a for loop</h3>
+    <h3>2.Sum of even numbers between 1 to 50 using for loop</h3>
+    <!-- using while loop -->
+    <h3>3.Prime numbers</h3>
+    <h3>4.odd numbers from 1-20</h3>
+    <h3>5.factorial of a given numbers</h3>
+</body>
+<script>
+    // using for loop
+    //Multiplication table of 5 using a for loop
+    let number=5;
+    for(i=1;i<=10;i++)
+        {
+            console.log(number+"X"+i+"=",number*i)
+        }
+    //Sum of even numbers between 1 to 50 using for loop
+    for(let j=0;j<=50;j+=2)
+    {
+        console.log('even between 1-50 are:',j)
+    }
+// while loops programs
+//1.odd number program from 1 to 20 
+ let k=1;
+ while(k<=20){
+    if(k%2!==0){
+    console.log('The odd numbers from 1 to 20 are:',k)
+    }
+    k++
+ } 
+ // 2.factorial of a given number
+ let n=prompt('Enter the factorial number');
+ let l=1, fact=1
+ while(l<=n)
+{
+  fact = fact*l
+  l++
+}
+console.log('The factiorial of the given number is:', fact)
+
+//3.prime number between 1-20.
+let num = 2; 
+let isPrime;
+while (num <= 20) {
+    isPrime = true; 
+    let i = 2;
+    while (i < num) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+        i++;
+    }
+    if (isPrime) {
+        console.log('The prime Numbers from 1-20 are:',num);
+    }
+
+    num++;
+}
+</script>
+</html> 
